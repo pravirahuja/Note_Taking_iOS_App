@@ -10,7 +10,6 @@ import UIKit
 
 class TaskInfoViewController: UIViewController {
     
-    
     @IBOutlet weak var taskTitleLabel: UILabel!
     @IBOutlet weak var taskDescriptionLabel: UILabel!
     
@@ -20,12 +19,10 @@ class TaskInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Note Information"
         taskTitleLabel.text = NoteTitle
         taskDescriptionLabel.text = NoteDescription
         
         // Do any additional setup after loading the view.
     }
-
-    
-
 }
